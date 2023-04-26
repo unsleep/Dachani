@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+    
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://images.unsplash.com/photo-1499424017184-418f6808abf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+  }
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .dachani{
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("https://images.unsplash.com/photo-1520166012956-add9ba0835cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  }
+  .box2 {
+    background-image: url("https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  }
+  .box3 {
+    background-image: url("https://guitarbell.com.tenpoga.com/wp-content/uploads/2015/10/DSCN49601.jpg");
+  }
+  .box4 {
+    background-image: url("https://img.digimart.net/prdimg/m/8c/2b3824d8fdd02c20c80b5ab77ce79317fb3cdf.jpg");
+  }
+  .dachani h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 5rem;
+  }
+  .dachani p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .container {
+        min-height: 120vh;
+        padding-bottom: 50px;
+        margin: 0 auto;
+        position: relative;
+        
+      }
+      .bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .bg::after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        filter: brightness(45%);
+        background-image: url("https://images.unsplash.com/photo-1499424017184-418f6808abf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+      .navBar {
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        height: 15vh;
+      }
+      .navBar ul {
+        display: flex;
+        align-items: center;
+      }
+      .navBar ul li {
+        padding: 0 10px;
+      }
+      .navBar ul li a {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+      }
+      .navBar .logo a {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      .content {
+        display: table-column;
+        justify-content: center;
+
+        width: 85%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+      }
+      .dachani{
+        color: #fff;
+        padding: 15px;
+      }
+      .card {
+        display: grid;
+        grid-template-columns: 70px 70px;
+        grid-gap: 25px ;
+
+      }
+      .card h2 {
+        color: #fff;
+        position: absolute;
+        bottom: -19px;
+        left: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+      }
+      .card .box1,
+      .box2,
+      .box3,
+      .box4 {
+        width: 200%;
+        height: 220px;   
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      .box2,.box4{
+        position: relative;
+        left: 55px;
+      }
+      .box1 {
+        background-image: url("https://images.unsplash.com/photo-1520166012956-add9ba0835cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+      }
+      .box2 {
+        background-image: url("https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+      }
+      .box3 {
+        background-image: url("https://guitarbell.com.tenpoga.com/wp-content/uploads/2015/10/DSCN49601.jpg");
+      }
+      .box4 {
+        background-image: url("https://img.digimart.net/prdimg/m/8c/2b3824d8fdd02c20c80b5ab77ce79317fb3cdf.jpg");
+      }
+      .dachani h2 {
+        font-size: 2rem;
+        letter-spacing: 2.8px;
+      }
+      .text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .txt h1 {
+        font-size: 3.5rem;
+      }
+      .dachani p {
+        opacity: 0.4;
+      }
+      .tnx h2 i {
+        color: #fd7e13;
+      }
+      .card div {
+        transition: 0.5s;
+      }
+      .card div:hover {
+        transition: 0.3s;
+        transform: translateY(-10px);
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      }
+
+  }
